@@ -9,9 +9,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { rootRouterConfig } from './app.routes';
 // import ngx-translate and the http loader
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import { TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule} from '@angular/common/http';
 // components
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';

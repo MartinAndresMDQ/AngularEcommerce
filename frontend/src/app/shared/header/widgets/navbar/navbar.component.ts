@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MENUITEMS, Menu } from './navbar-items';
-import { Router, ActivatedRoute } from "@angular/router";
 declare var $: any;
 
 @Component({
@@ -11,11 +10,16 @@ declare var $: any;
 export class NavbarComponent implements OnInit {
   
   public menuItems: Menu[];
+  public toggleNavBar : boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   	this.menuItems = MENUITEMS.filter(menuItem => menuItem);
+  }
+
+  toggleNav() {
+    this.toggleNavBar = !this.toggleNavBar
   }
 
 }

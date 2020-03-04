@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DatatableComponent } from "@swimlane/ngx-datatable/release";
+import { DatatableComponent } from "@swimlane/ngx-datatable";
 import { orderDB } from "../../../shared/tables/order-list";
 @Component({
   selector: 'app-orders',

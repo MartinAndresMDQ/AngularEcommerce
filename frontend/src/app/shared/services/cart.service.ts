@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Product } from '../classes/product';
-import { CartItem } from '../classes/cart-item';
 import { ToastrService } from 'ngx-toastr';
 import { BehaviorSubject, Observable, Subscriber } from 'rxjs';
-import { map, filter } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
+import { CartItem } from '../classes/cart-item';
+import { Product } from '../classes/product';
 
 // Get product from Localstorage
 let products = JSON.parse(localStorage.getItem("cartItem")) || [];

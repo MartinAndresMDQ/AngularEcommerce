@@ -52,10 +52,14 @@
               "vendorChunk": false,
               "buildOptimizer": true,
               "budgets": [
-                { 
+                {
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -124,7 +128,7 @@
           "builder": "@angular-devkit/build-angular:server",
           "options": {
             "outputPath": "dist/server",
-            "main": "src/main.server.ts",
+            "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
           "configurations": {
@@ -136,14 +140,41 @@
                 }
               ],
               "sourceMap": false,
-              "optimization": {
-                "scripts": false,
-                "styles": true
-              }
+              "optimization": true
             }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "multikart-backend:build",
+            "serverTarget": "multikart-backend:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "multikart-backend:build:production",
+              "serverTarget": "multikart-backend:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "multikart-backend:build:production",
+            "serverTarget": "multikart-backend:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
           }
         }
       }
-    }},
-  "defaultProject": "multikart-backend"
+    }
+  },
+  "defaultProject": "multikart-backend",
+  "cli": {
+    "analytics": false
+  }
 }

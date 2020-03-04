@@ -1,3 +1,8 @@
+Theme Version 4.2 Updates(19 sep 2019)
+-- Ugrage to angular 9
+-- Ugrage dependencies
+-- Fixed minor bugs
+
 Theme Version 4.1 Updates(19 sep 2019)
 -- RTL integrated to backend.
 -- Fixed all backend bugs

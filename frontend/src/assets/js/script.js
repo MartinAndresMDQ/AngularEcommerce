@@ -4,10 +4,9 @@ $(document).ready(function() {
   /*=====================
    01.Pre loader
    ==========================*/
-  $('.loader-wrapper').fadeOut('slow', function() {
+   $('.loader-wrapper').fadeOut('slow', function() {
     $(this).remove();
   });
-
 
   /*=====================
    02.Tap on Top
@@ -26,21 +25,9 @@ $(document).ready(function() {
     return false;
   });
 
-
-  /*=====================
-   03. toggle nav
-   ==========================*/
-  $('.toggle-nav').on('click', function() {
-    $('.sm-horizontal').css("right", "0px");
-  });
-  $(".mobile-back").on('click', function() {
-    $('.sm-horizontal').css("right", "-410px");
-  });
-
-  
  
   /*=====================
-   04. footer according
+   02. footer according
    ==========================*/
   var contentwidth = jQuery(window).width();
   if ((contentwidth) < '750') {

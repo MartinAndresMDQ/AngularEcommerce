@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
 import { trigger, transition, style, animate } from "@angular/animations";
 import { Product, ColorFilter, TagFilter } from '../../../../shared/classes/product';
@@ -10,7 +10,6 @@ import * as $ from 'jquery';
   selector: 'app-collection-left-sidebar',
   templateUrl: './collection-left-sidebar.component.html',
   styleUrls: ['./collection-left-sidebar.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [  // angular animation
     trigger('Animation', [
       transition('* => fadeOut', [

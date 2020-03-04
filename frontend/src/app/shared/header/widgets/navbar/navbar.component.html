@@ -1,15 +1,16 @@
 <nav id="main-nav">
-  <div class="toggle-nav">
+  <div class="toggle-nav" (click)="toggleNav()">
     <i class="fa fa-bars sidebar-bar"></i>
   </div>
   <!-- Sample menu definition -->
-  <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+  <ul id="main-menu" class="sm pixelstrap sm-horizontal" [class.m-toggle]="toggleNavBar">
     
     <li>
-      <div class="mobile-back text-right">
+      <div class="mobile-back text-right" (click)="toggleNav()">
         Back<i class="fa fa-angle-right pl-2" aria-hidden="true"></i>
       </div>
     </li>
+
     <!-- 1st Level Menu -->
     <li *ngFor="let menuItem of menuItems" [class]="menuItem.megaMenu ? 'mega' : ''" [id]="menuItem.megaMenuType == 'large' ? 'hover-cls' : ''">
         <!-- Sub -->

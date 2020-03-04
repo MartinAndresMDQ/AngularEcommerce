@@ -10,7 +10,7 @@ export class MasonaryThreeGridComponent implements OnInit, AfterViewInit {
   
   public option
 
-  @ViewChild('gallery', { static: false }) galleryElement: ElementRef;	
+  @ViewChild('gallery') galleryElement: ElementRef;	
 
   constructor() { }
 
