@@ -82,5 +82,5 @@ export const content: Routes = [
     data: {
       breadcrumb: "Invoice"
     }
-  },
+  }
 ];

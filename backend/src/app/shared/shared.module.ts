@@ -15,7 +15,6 @@ import { WINDOW_PROVIDERS } from './service/windows.service';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { RightSidebarComponent } from './components/right-sidebar/right-sidebar.component';
 
-
 @NgModule({
   declarations: [
     ToggleFullscreenDirective,
