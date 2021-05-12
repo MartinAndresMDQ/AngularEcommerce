@@ -28,7 +28,7 @@
     "@swimlane/ngx-datatable": "^16.0.3",
     "angular-count-to": "0.0.3",
     "bootstrap": "^4.4.1",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartist": "^0.11.4",
     "classlist.js": "^1.1.20150312",
     "express": "^4.15.2",
